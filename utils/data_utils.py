@@ -1,3 +1,5 @@
+import pandas as pd
+
 def padroniza_genero(df):
     """
     Converte os códigos numéricos da coluna CL_EC, usando o .map para substituir 'F' por 'FEMININO','M' por 'MASCULINO'
@@ -38,3 +40,26 @@ def padroniza_estado_civil(df):
 
     })
     return df['CL_EC'].map(dicionario)
+
+def tratar_categorias(df):
+    """
+    Preenche campos nulos usando o método fillna para o texto "SEM CATEGORIA"
+
+    Parâmetros:
+        df: DataFrame contendo a coluna PR_CAT
+    Retorna:
+        df['PR_CAT'] atualizado
+    """
+    return df['PR_CAT'].fillna("SEM CATEGORIA")
+
+
+def tratar_datas(df):
+    """
+    Trata as datas , alterando-as para o formato datetime
+
+    Parâmetros:
+        df: DataFrame contendo a coluna DATA
+    Retorna:
+        df['DATA'] atualizado
+    """
+    return pd.to_datetime(df['DATA'], format='%d/%m/%Y', errors='coerce')
