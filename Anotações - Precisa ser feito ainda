@@ -1,0 +1,34 @@
+raw -> clean
+
+verificar duplicados
+
+iqr zcore capping
+
+fazer para todos
+Gerar estatísticas descritivas básicas para coluna de número de filhos do cliente (média; mediana; desvio padrão; moda; máximo; mínimo; e contagem, quartis),
+
+
+pivot_table()
+groupby media mediana min max .. fazer
+
+conclusões no readme
+
+usar numpy
+
+fazer graficos
+
+
+no git hub :  1 readme com o nome + turma , explicação do projeto, conclusões e insights
+
+
+1 repositório com 1 pasta com os arquivos raw e limpos
+
+1 pasta com o arquivo .py ou ipynb
+
+arquivo final .csv limpos
+
+
+explicar o pq usou int ou str nas colunas,
+para dizer que vai fazer agrupamento se foi int
+ou se foi str por ser uma boa pratica pelo pessoal de engenharia de ados
+
